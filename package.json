@@ -1,0 +1,22 @@
+{
+  "name": "cypress-1",
+  "version": "1.0.0",
+  "description": "Cypress tests for booksApp (Netology 7.6)",
+  "keywords": [
+    "lecture",
+    "cypress"
+  ],
+  "license": "ISC",
+  "author": "Achakov Artem",
+  "type": "commonjs",
+  "scripts": {
+    "cy:desktop:open": "cypress open --browser chrome",
+    "cy:desktop:run": "cypress run --browser chrome",
+    "cy:mobile:open": "cross-env CYPRESS_ENV_CONFIG=cypress.env.mobile.json cypress open --browser edge",
+    "cy:mobile:run": "cross-env CYPRESS_ENV_CONFIG=cypress.env.mobile.json cypress run --browser edge"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "cypress": "^15.16.0"
+  }
+}
